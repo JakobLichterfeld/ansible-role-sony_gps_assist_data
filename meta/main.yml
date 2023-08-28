@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  role_name: sony_gps_assist_data
+  version: 1.0.0
+  author: JakobLichterfeld
+  description: Install Sony-GPS-Assist-Data Script via git checkout
+
+  homepage: https://github.com/JakobLichterfeld/ansible-role_sony_gps_assist_data
+  issue_tracker_url: https://github.com/JakobLichterfeld/ansible-role_sony_gps_assist_data/issues
+
+  license: MIT
+  min_ansible_version: 2.1
+
+  platforms:
+  - name: Ubuntu
+    versions:
+      - jammy
+
+  galaxy_tags:
+    - sony-gps-assist-data
+    - gps-assist-data
+
+dependencies: []

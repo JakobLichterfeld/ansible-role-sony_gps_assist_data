@@ -1,0 +1,24 @@
+---
+# tasks file for sony_gps_assist_data
+- name: Install Block
+  block:
+    - name: Install Dependencies
+      ansible.builtin.package:
+        name:
+          - curl
+        state: present
+
+    - name: Create Sony GPS Assist Data destination folder if needed
+      ansible.builtin.file:
+        path: "{{ sony_gps_assist_data.dest }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+
+    - name: Git checkout the Bash Script
+      become: true
+      become_user: "{{ ansible_user }}"
+      ansible.builtin.git:
+        repo: "{{ sony_gps_assist_data.repo }}"
+        dest: "{{ sony_gps_assist_data.dest }}"
+        version: master

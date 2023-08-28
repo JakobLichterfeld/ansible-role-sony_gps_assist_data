@@ -1,0 +1,5 @@
+---
+# defaults file for sony_gps_assist_data
+sony_gps_assist_data:
+  repo: "https://github.com/Zigazou/SonyGPSAssist.git"
+  dest: "/home/{{ ansible_user }}/Downloads/sony_gps_assist_data"
