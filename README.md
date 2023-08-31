@@ -1,5 +1,8 @@
 # Ansible Role: Sony-GPS-Assist-Data
 
+[![CI](https://github.com/JakobLichterfeld/ansible-role-sony_gps_assist_data/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/JakobLichterfeld/ansible-role-sony_gps_assist_data/actions/workflows/ci.yml)
+[![Publish role on Ansible Galaxy](https://github.com/JakobLichterfeld/ansible-role-sony_gps_assist_data/actions/workflows/publish_role_on_ansible_galaxy.yml/badge.svg?branch=main)](https://github.com/JakobLichterfeld/ansible-role-sony_gps_assist_data/actions/workflows/publish_role_on_ansible_galaxy.yml)
+
 Install Sony-GPS-Assist-Data Script via git checkout
 
 - Install Dependencies
@@ -27,7 +30,7 @@ None.
 ```yaml
 ---
 - hosts: all
-  gather_facts: yes
+  gather_facts: true
   become: true
 
   roles:
