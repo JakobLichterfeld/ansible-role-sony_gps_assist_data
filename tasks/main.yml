@@ -6,6 +6,7 @@
       ansible.builtin.package:
         name:
           - curl
+          - git
         state: present
 
     - name: Create Sony GPS Assist Data destination folder if needed
